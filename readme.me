@@ -1,0 +1,109 @@
+# ML Operational Intelligence
+**OrionLab / TeleObjetivo**
+
+Repositorio de proyectos ejecutables de *Machine Learning aplicado a operación, riesgo, eventos y toma de decisiones*.  
+Cada proyecto está diseñado para ser **explicable**, **reproducible** y **útil en contextos reales de Data Science, Analytics y Operaciones**.
+
+> ⚠️ **Nota V1**  
+> Los datasets utilizados en esta primera versión son **simulados o anonimizados**, creados exclusivamente con fines demostrativos y educativos.  
+> Las estructuras, flujos y outputs reflejan escenarios reales.
+
+---
+
+## 🎯 Objetivo del repositorio
+
+- Demostrar capacidad aplicada en **Machine Learning operacional**
+- Explorar modelos que **activan decisiones**, no solo predicen
+- Construir un portafolio técnico **explicable en entrevistas**
+- Servir como base para iteraciones V2/V3 con datos reales
+
+---
+
+## 🧠 Proyectos incluidos (V1)
+
+| Código | Proyecto | Problema que aborda | Técnica principal | Output |
+|------|---------|--------------------|------------------|--------|
+| p01 | Event Early Warning | Detección temprana de anomalías | Isolation Forest | Alertas de evento |
+| p02 | Risk Scoring Evolutivo | Riesgo dinámico en el tiempo | Logistic / Trees | Score temporal |
+| p03 | Operational State Classifier | Clasificación de estados | Random Forest | Estado operacional |
+| p04 | Demand Prediction + Trigger | Predicción con activación | Regression | Acción sugerida |
+| p05 | Situation ML Engine | Detección de “situaciones” | Feature Engineering + ML | Label situacional |
+| p06 | Timeline Prediction Engine | Predicción de eventos futuros | Time Series | Línea de tiempo |
+| p07 | Trend Shift Detector | Cambios de tendencia | Rolling stats | Señales de quiebre |
+| p08 | Decision Threshold Optimizer | Umbrales óptimos | Optimization | Thresholds |
+| p09 | Risk Scenario Simulator | Simulación de escenarios | Monte Carlo | Escenarios |
+| p10 | Early Drift Detection | Deriva de datos | Drift metrics | Alertas |
+| p11 | Event Impact Estimator | Impacto post-evento | Regression | Delta impacto |
+| p12 | Operational KPI Forecaster | KPIs futuros | Forecasting | KPIs |
+| p13 | Neuro-Inspired Signal ML | Inspirado en neuroseñales | Signal ML | Estados |
+| p14 | Atlas de Tendencias | Mapa global de tendencias | Clustering | Atlas visual |
+
+---
+
+## 📁 Estructura estándar de cada proyecto
+
+```
+pXX_nombre_proyecto/
+├── data/          # datasets simulados
+├── notebooks/     # análisis principal
+├── src/           # lógica reusable
+├── img/           # gráficos exportados
+└── README.md      # explicación del proyecto
+```
+
+---
+
+## 📊 Contrato de datos
+Los formatos de entrada y salida están documentados en:
+
+- `DATA_DICTIONARY.md`
+- `OUTPUTS_DICTIONARY.md`
+
+---
+
+## ▶️ Cómo ejecutar (local)
+
+```bash
+git clone https://github.com/teleobjetivo/ml-operational-intelligence.git
+cd ml-operational-intelligence
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+jupyter notebook
+```
+
+---
+
+## 🗺 Roadmap
+
+### V1 (actual)
+- Proyectos funcionales con datos simulados
+- Outputs visibles y explicables
+- Documentación base
+
+### V2
+- Integración con datos reales / abiertos
+- Evaluación de performance
+- Automatización de pipelines
+
+### V3
+- Agentes ML
+- Activación en tiempo real
+- APIs / dashboards
+
+---
+
+## 👤 Autor
+
+**Hugo Baghetti Calderón**  
+Ingeniero en Informática · Magíster en Gestión TI  
+OrionLab — Data, Science & Light  
+
+- 🌐 https://www.teleobjetivo.cl  
+- 💻 https://github.com/teleobjetivo  
+- 📸 Instagram: @tele.objetivo  
+
+---
+
+## 📜 Licencia
+MIT License
