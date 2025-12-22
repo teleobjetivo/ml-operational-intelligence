@@ -10,3 +10,8 @@ __pycache__/
 **/outputs/*.csv
 **/outputs/*.md
 **/img/*_plot.png
+
+# Generated artifacts (V1 demos)
+**/outputs/*.csv
+**/outputs/*.png
+**/img/*_plot.png
