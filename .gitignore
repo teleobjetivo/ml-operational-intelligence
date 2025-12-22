@@ -15,3 +15,6 @@ __pycache__/
 **/outputs/*.csv
 **/outputs/*.png
 **/img/*_plot.png
+
+# Private / local workspace
+_private_docs/
