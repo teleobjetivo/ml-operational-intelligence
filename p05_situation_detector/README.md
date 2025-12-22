@@ -18,39 +18,7 @@ Este proyecto es una demo **reproducible** (V1) orientada a entrevistas y portaf
 - Documentación y estructura de proyecto lista para escalar (V2+).
 
 ## 🧠 Arquitectura / Flujo
-
-
-```mermaid
-flowchart LR
-  A[Inputs: signals + context] --> B[Pattern library]
-  B --> C[Situation rules/ML]
-  C --> D[Situation detected]
-  D --> E[Explain (top factors)]
-  E --> F[Outputs: situations.csv + explanations.json]
-```
-
-## Estructura del proyecto
-
-- `data/`
-- `notebooks/`
-- `img/`
-- `outputs/`
-- `src/`
-
-## Qué hace cada archivo
-
-- `notebooks`
-- `src`
-- `data/DATA_DICTIONARY.md`
-- `outputs/OUTPUTS_DICTIONARY.md`
-- `README.md`
-- `notebooks/p05_situation_detector.ipynb`
-
-## Instalación
-
-Desde la **raíz del repo**:
-
-```bash
+bash
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install -U pip
@@ -145,6 +113,15 @@ python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install -U pip
 pip install -r requirements.txt
+
+```mermaid
+flowchart LR
+  A[Inputs: signals + context] --> B[Pattern library]
+  B --> C[Situation rules/ML]
+  C --> D[Situation detected]
+  D --> E[Explain (top factors)]
+  E --> F[Outputs: situations.csv + explanations.json]
+```
 ```
 
 ## Run
