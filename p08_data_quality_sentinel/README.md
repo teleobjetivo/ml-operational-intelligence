@@ -122,8 +122,6 @@ This is a **reproducible** V1 demo for interviews and portfolio.
 
 ## 🧠 Architecture / Flow
 
-![p08_data_quality_sentinel – diagram](img/p08_data_quality_sentinel_plot.png) 
-
 ## Project structure
 
 - `data/`

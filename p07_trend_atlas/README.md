@@ -119,8 +119,6 @@ This is a **reproducible** V1 demo for interviews and portfolio.
 
 ## 🧠 Architecture / Flow
 
-![p07_trend_atlas – diagram](img/p07_trend_atlas_plot.png) 
-
 ## Project structure
 
 - `data/`

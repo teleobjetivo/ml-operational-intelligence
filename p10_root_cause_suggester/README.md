@@ -119,8 +119,6 @@ This is a **reproducible** V1 demo for interviews and portfolio.
 
 ## 🧠 Architecture / Flow
 
-![p10_root_cause_suggester – diagram](img/p10_root_cause_suggester_plot.png) 
-
 ## Project structure
 
 - `data/`

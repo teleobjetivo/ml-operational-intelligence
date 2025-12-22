@@ -119,8 +119,6 @@ This is a **reproducible** V1 demo for interviews and portfolio.
 
 ## 🧠 Architecture / Flow
 
-![p11_ticket_triage_automl – diagram](img/p11_ticket_triage_automl_plot.png) 
-
 ## Project structure
 
 - `data/`

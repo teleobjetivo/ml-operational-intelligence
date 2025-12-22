@@ -123,8 +123,6 @@ This is a **reproducible** V1 demo for interviews and portfolio.
 
 ## 🧠 Architecture / Flow
 
-![p04_demand_forecast_activation – diagram](img/p04_demand_forecast_activation_plot.png) 
-
 ## Project structure
 
 - `data/`

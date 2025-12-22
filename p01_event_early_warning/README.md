@@ -122,8 +122,6 @@ This is a **reproducible** V1 demo for interviews and portfolio.
 
 ## 🧠 Architecture / Flow
 
-![p01_event_early_warning – diagram](img/p01_event_early_warning_plot.png) 
-
 ## Project structure
 
 - `data/`

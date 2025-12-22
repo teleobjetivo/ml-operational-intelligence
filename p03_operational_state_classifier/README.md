@@ -120,8 +120,6 @@ This is a **reproducible** V1 demo for interviews and portfolio.
 
 ## 🧠 Architecture / Flow
 
-![p03_operational_state_classifier – diagram](img/p03_operational_state_classifier_plot.png) 
-
 ## Project structure
 
 - `data/`

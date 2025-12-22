@@ -118,8 +118,6 @@ This is a **reproducible** V1 demo for interviews and portfolio.
 
 ## 🧠 Architecture / Flow
 
-![p14_executive_demo_dashboard – diagram](img/p14_executive_demo_dashboard_plot.png) 
-
 ## Project structure
 
 - `data/`

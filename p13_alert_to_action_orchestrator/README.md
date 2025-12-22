@@ -120,8 +120,6 @@ This is a **reproducible** V1 demo for interviews and portfolio.
 
 ## 🧠 Architecture / Flow
 
-![p13_alert_to_action_orchestrator – diagram](img/p13_alert_to_action_orchestrator_plot.png) 
-
 ## Project structure
 
 - `data/`

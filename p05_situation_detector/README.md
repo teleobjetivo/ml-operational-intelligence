@@ -119,8 +119,6 @@ This is a **reproducible** V1 demo for interviews and portfolio.
 
 ## 🧠 Architecture / Flow
 
-![p05_situation_detector – diagram](img/p05_situation_detector_plot.png) 
-
 ## Project structure
 
 - `data/`

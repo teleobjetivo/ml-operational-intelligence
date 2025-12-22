@@ -119,8 +119,6 @@ This is a **reproducible** V1 demo for interviews and portfolio.
 
 ## 🧠 Architecture / Flow
 
-![p06_timeline_prediction_engine – diagram](img/p06_timeline_prediction_engine_plot.png) 
-
 ## Project structure
 
 - `data/`

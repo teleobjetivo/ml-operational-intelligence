@@ -119,8 +119,6 @@ This is a **reproducible** V1 demo for interviews and portfolio.
 
 ## 🧠 Architecture / Flow
 
-![p12_kpi_narrative_generator – diagram](img/p12_kpi_narrative_generator_plot.png) 
-
 ## Project structure
 
 - `data/`

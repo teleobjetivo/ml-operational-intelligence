@@ -20,6 +20,7 @@ Este proyecto es una demo **reproducible** (V1) orientada a entrevistas y portaf
 ## 🧠 Arquitectura / Flujo
 
 
+```mermaid
 flowchart LR
   A[Input: entities.csv + history.csv] --> B[Windowing / time features]
   B --> C[Train / update model]
@@ -30,7 +31,7 @@ flowchart LR
   F -- no --> H[Monitoring]
   G --> I[Outputs: scores.csv + actions.csv]
   H --> I
-
+```
 
 ## Estructura del proyecto
 
@@ -121,8 +122,6 @@ This is a **reproducible** V1 demo for interviews and portfolio.
 - A project structure ready to scale (V2+).
 
 ## 🧠 Architecture / Flow
-
-![p02_risk_scoring_evolutivo – diagram](img/p02_risk_scoring_evolutivo_plot.png) 
 
 ## Project structure
 

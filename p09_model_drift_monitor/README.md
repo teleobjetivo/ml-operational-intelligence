@@ -122,8 +122,6 @@ This is a **reproducible** V1 demo for interviews and portfolio.
 
 ## 🧠 Architecture / Flow
 
-![p09_model_drift_monitor – diagram](img/p09_model_drift_monitor_plot.png) 
-
 ## Project structure
 
 - `data/`
