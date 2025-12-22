@@ -19,7 +19,19 @@ Este proyecto es una demo **reproducible** (V1) orientada a entrevistas y portaf
 
 ## 🧠 Arquitectura / Flujo
 
-![p02_risk_scoring_evolutivo – diagram](img/p02_risk_scoring_evolutivo_plot.png) 
+
+```mermaid
+flowchart LR
+  A[Input: entities.csv + history.csv] --> B[Windowing / time features]
+  B --> C[Train / update model]
+  C --> D[Score (risk_t)]
+  D --> E[Calibration + segments]
+  E --> F{Threshold crossed?}
+  F -- yes --> G[Trigger action plan]
+  F -- no --> H[Monitoring]
+  G --> I[Outputs: scores.csv + actions.csv]
+  H --> I
+```
 
 ## Estructura del proyecto
 

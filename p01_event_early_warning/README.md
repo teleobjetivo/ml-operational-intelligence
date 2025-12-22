@@ -19,7 +19,18 @@ Este proyecto es una demo **reproducible** (V1) orientada a entrevistas y portaf
 
 ## 🧠 Arquitectura / Flujo
 
-![p01_event_early_warning – diagram](img/p01_event_early_warning_plot.png) 
+
+```mermaid
+flowchart LR
+  A[Input: events.csv] --> B[Feature engineering]
+  B --> C[Baseline model / thresholds]
+  C --> D[Early warning score]
+  D --> E{Alert?}
+  E -- yes --> F[Create alert + context]
+  E -- no --> G[Store score]
+  F --> H[Outputs: alerts.csv + report]
+  G --> H
+```
 
 ## Estructura del proyecto
 

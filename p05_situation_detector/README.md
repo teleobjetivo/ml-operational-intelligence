@@ -19,7 +19,15 @@ Este proyecto es una demo **reproducible** (V1) orientada a entrevistas y portaf
 
 ## 🧠 Arquitectura / Flujo
 
-![p05_situation_detector – diagram](img/p05_situation_detector_plot.png) 
+
+```mermaid
+flowchart LR
+  A[Inputs: signals + context] --> B[Pattern library]
+  B --> C[Situation rules/ML]
+  C --> D[Situation detected]
+  D --> E[Explain (top factors)]
+  E --> F[Outputs: situations.csv + explanations.json]
+```
 
 ## Estructura del proyecto
 

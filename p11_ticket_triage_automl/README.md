@@ -19,7 +19,15 @@ Este proyecto es una demo **reproducible** (V1) orientada a entrevistas y portaf
 
 ## 🧠 Arquitectura / Flujo
 
-![p11_ticket_triage_automl – diagram](img/p11_ticket_triage_automl_plot.png) 
+
+```mermaid
+flowchart LR
+  A[Input: tickets.csv] --> B[Text preprocessing]
+  B --> C[AutoML / baseline models]
+  C --> D[Priority + routing]
+  D --> E[Human review loop]
+  E --> F[Outputs: triage.csv + model_card.md]
+```
 
 ## Estructura del proyecto
 

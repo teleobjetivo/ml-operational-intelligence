@@ -19,7 +19,16 @@ Este proyecto es una demo **reproducible** (V1) orientada a entrevistas y portaf
 
 ## 🧠 Arquitectura / Flujo
 
-![p13_alert_to_action_orchestrator – diagram](img/p13_alert_to_action_orchestrator_plot.png) 
+
+```mermaid
+flowchart LR
+  A[Input: alerts.csv] --> B[Enrich context]
+  B --> C[Policy engine]
+  C --> D[Action selection]
+  D --> E[Execute: notify/task]
+  E --> F[Audit log]
+  F --> G[Outputs: actions.csv + audit_log.csv]
+```
 
 ## Estructura del proyecto
 

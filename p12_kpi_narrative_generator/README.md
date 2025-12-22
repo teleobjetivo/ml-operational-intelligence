@@ -19,7 +19,15 @@ Este proyecto es una demo **reproducible** (V1) orientada a entrevistas y portaf
 
 ## 🧠 Arquitectura / Flujo
 
-![p12_kpi_narrative_generator – diagram](img/p12_kpi_narrative_generator_plot.png) 
+
+```mermaid
+flowchart LR
+  A[Input: kpis.csv] --> B[Compute deltas]
+  B --> C[Detect anomalies]
+  C --> D[NLG templates]
+  D --> E[Generate narrative]
+  E --> F[Outputs: narrative.md + highlights.csv]
+```
 
 ## Estructura del proyecto
 

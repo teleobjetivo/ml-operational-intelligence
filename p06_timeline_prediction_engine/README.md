@@ -19,7 +19,15 @@ Este proyecto es una demo **reproducible** (V1) orientada a entrevistas y portaf
 
 ## 🧠 Arquitectura / Flujo
 
-![p06_timeline_prediction_engine – diagram](img/p06_timeline_prediction_engine_plot.png) 
+
+```mermaid
+flowchart LR
+  A[Input: tasks/events.csv] --> B[Feature extraction]
+  B --> C[Duration model]
+  C --> D[ETA predictions]
+  D --> E[Risk of delay]
+  E --> F[Outputs: timeline.csv + risk_flags.csv]
+```
 
 ## Estructura del proyecto
 

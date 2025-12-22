@@ -19,7 +19,18 @@ Este proyecto es una demo **reproducible** (V1) orientada a entrevistas y portaf
 
 ## 🧠 Arquitectura / Flujo
 
-![p08_data_quality_sentinel – diagram](img/p08_data_quality_sentinel_plot.png) 
+
+```mermaid
+flowchart LR
+  A[Input: dataset.csv] --> B[Schema + profiling]
+  B --> C[Rules: nulls/outliers/drift]
+  C --> D[Quality score]
+  D --> E{Fail?}
+  E -- yes --> F[Block + ticket]
+  E -- no --> G[Approve]
+  F --> H[Outputs: dq_report.md + dq_metrics.csv]
+  G --> H
+```
 
 ## Estructura del proyecto
 

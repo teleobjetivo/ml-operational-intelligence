@@ -19,7 +19,19 @@ Este proyecto es una demo **reproducible** (V1) orientada a entrevistas y portaf
 
 ## 🧠 Arquitectura / Flujo
 
-![p04_demand_forecast_activation – diagram](img/p04_demand_forecast_activation_plot.png) 
+
+```mermaid
+flowchart LR
+  A[Input: demand_timeseries.csv] --> B[Split train/test]
+  B --> C[Forecast model]
+  C --> D[Forecast horizon]
+  D --> E[Rules / activation logic]
+  E --> F{Act?}
+  F -- yes --> G[Create task/order]
+  F -- no --> H[Log only]
+  G --> I[Outputs: forecast.csv + actions.csv]
+  H --> I
+```
 
 ## Estructura del proyecto
 

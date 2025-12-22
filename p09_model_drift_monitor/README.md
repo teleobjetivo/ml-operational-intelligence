@@ -19,7 +19,18 @@ Este proyecto es una demo **reproducible** (V1) orientada a entrevistas y portaf
 
 ## 🧠 Arquitectura / Flujo
 
-![p09_model_drift_monitor – diagram](img/p09_model_drift_monitor_plot.png) 
+
+```mermaid
+flowchart LR
+  A[Input: baseline + new batch] --> B[Feature drift metrics]
+  B --> C[Prediction drift metrics]
+  C --> D[Drift score]
+  D --> E{Drift?}
+  E -- yes --> F[Retrain recommendation]
+  E -- no --> G[Continue]
+  F --> H[Outputs: drift_report.md + drift_metrics.csv]
+  G --> H
+```
 
 ## Estructura del proyecto
 

@@ -19,7 +19,16 @@ Este proyecto es una demo **reproducible** (V1) orientada a entrevistas y portaf
 
 ## 🧠 Arquitectura / Flujo
 
-![p03_operational_state_classifier – diagram](img/p03_operational_state_classifier_plot.png) 
+
+```mermaid
+flowchart LR
+  A[Input: sensor_ops.csv] --> B[Clean + resample]
+  B --> C[Label/State definition]
+  C --> D[Classifier training]
+  D --> E[State prediction]
+  E --> F[Confusion + metrics]
+  F --> G[Outputs: states.csv + metrics.json]
+```
 
 ## Estructura del proyecto
 

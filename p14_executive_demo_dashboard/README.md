@@ -19,7 +19,14 @@ Este proyecto es una demo **reproducible** (V1) orientada a entrevistas y portaf
 
 ## 🧠 Arquitectura / Flujo
 
-![p14_executive_demo_dashboard – diagram](img/p14_executive_demo_dashboard_plot.png) 
+
+```mermaid
+flowchart LR
+  A[Inputs: outputs from p01..p13] --> B[Aggregate KPIs]
+  B --> C[Build charts]
+  C --> D[Render HTML dashboard]
+  D --> E[Outputs: dist/dashboard.html]
+```
 
 ## Estructura del proyecto
 

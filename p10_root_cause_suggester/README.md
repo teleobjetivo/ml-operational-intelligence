@@ -19,7 +19,15 @@ Este proyecto es una demo **reproducible** (V1) orientada a entrevistas y portaf
 
 ## 🧠 Arquitectura / Flujo
 
-![p10_root_cause_suggester – diagram](img/p10_root_cause_suggester_plot.png) 
+
+```mermaid
+flowchart LR
+  A[Input: incidents + signals] --> B[Join context]
+  B --> C[Candidate causes]
+  C --> D[Ranking/attribution]
+  D --> E[Top root-cause suggestions]
+  E --> F[Outputs: root_causes.csv + notes.md]
+```
 
 ## Estructura del proyecto
 

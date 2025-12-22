@@ -19,7 +19,15 @@ Este proyecto es una demo **reproducible** (V1) orientada a entrevistas y portaf
 
 ## 🧠 Arquitectura / Flujo
 
-![p07_trend_atlas – diagram](img/p07_trend_atlas_plot.png) 
+
+```mermaid
+flowchart LR
+  A[Input: multi-source trends] --> B[Normalize + align]
+  B --> C[Clustering/topics]
+  C --> D[Trend scoring]
+  D --> E[Atlas views]
+  E --> F[Outputs: trends.csv + atlas_report.md]
+```
 
 ## Estructura del proyecto
 
