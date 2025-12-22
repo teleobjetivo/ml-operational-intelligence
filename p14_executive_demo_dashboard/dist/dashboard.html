@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>P14 — Executive Demo Dashboard</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial; margin: 0; background: #0b1220; color: #e8eefc; }
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 22px; }
+    .top { display:flex; justify-content:space-between; align-items:flex-end; gap: 16px; }
+    .title { font-size: 22px; font-weight: 700; }
+    .subtitle { font-size: 13px; color: #a9b7d4; margin-top: 6px; }
+    .chip { font-size: 12px; color: #a9b7d4; border: 1px solid rgba(169,183,212,0.25); padding: 6px 10px; border-radius: 999px; }
+    .section { margin-top: 18px; }
+    h2 { font-size: 16px; margin: 18px 0 10px; color: #d9e5ff; }
+    .grid { display:grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    .card { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 14px; padding: 14px; }
+    .kpi-title { font-size: 12px; color: #a9b7d4; }
+    .kpi-value { font-size: 24px; font-weight: 800; margin-top: 6px; }
+    .kpi-meta { display:flex; gap: 10px; align-items:center; margin-top: 10px; flex-wrap: wrap; }
+    .badge { font-size: 11px; padding: 4px 8px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.14); }
+    .badge.ok { background: rgba(39, 174, 96, 0.18); }
+    .badge.watch { background: rgba(241, 196, 15, 0.18); }
+    .muted { font-size: 12px; color: #a9b7d4; }
+    .footer { margin-top: 18px; font-size: 12px; color: #8fa2c7; }
+    @media (max-width: 980px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 640px) { .grid { grid-template-columns: 1fr; } .top { flex-direction: column; align-items:flex-start; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <div>
+        <div class="title">P14 — Executive Demo Dashboard</div>
+        <div class="subtitle">Portable V1 dashboard (simulated KPIs) · TeleObjetivo / Orion Lab</div>
+      </div>
+      <div class="chip">Generated: 2025-12-21 22:45:02</div>
+    </div>
+
+    
+        <section class="section">
+          <h2>Customer</h2>
+          <div class="grid">
+            
+            <div class="card">
+              <div class="kpi-title">Incidents (7d)</div>
+              <div class="kpi-value">27</div>
+              <div class="kpi-meta">
+                <span class="badge watch">WATCH</span>
+                <span class="muted">Target: 18</span>
+                <span class="muted">WoW: -4.1%</span>
+              </div>
+            </div>
+            
+            <div class="card">
+              <div class="kpi-title">SLA Compliance</div>
+              <div class="kpi-value">94.8%</div>
+              <div class="kpi-meta">
+                <span class="badge watch">WATCH</span>
+                <span class="muted">Target: 95.7%</span>
+                <span class="muted">WoW: -3.5%</span>
+              </div>
+            </div>
+            
+            <div class="card">
+              <div class="kpi-title">Cost per Ticket</div>
+              <div class="kpi-value">$13,812</div>
+              <div class="kpi-meta">
+                <span class="badge watch">WATCH</span>
+                <span class="muted">Target: $11,086</span>
+                <span class="muted">WoW: +0.9%</span>
+              </div>
+            </div>
+            
+            <div class="card">
+              <div class="kpi-title">Risk Alerts (7d)</div>
+              <div class="kpi-value">6</div>
+              <div class="kpi-meta">
+                <span class="badge watch">WATCH</span>
+                <span class="muted">Target: 3</span>
+                <span class="muted">WoW: -3.2%</span>
+              </div>
+            </div>
+            
+            <div class="card">
+              <div class="kpi-title">Pipeline Success Rate</div>
+              <div class="kpi-value">98.7%</div>
+              <div class="kpi-meta">
+                <span class="badge watch">WATCH</span>
+                <span class="muted">Target: 99.5%</span>
+                <span class="muted">WoW: -14.6%</span>
+              </div>
+            </div>
+            
+            <div class="card">
+              <div class="kpi-title">Forecast Error (MAPE)</div>
+              <div class="kpi-value">97.4%</div>
+              <div class="kpi-meta">
+                <span class="badge ok">OK</span>
+                <span class="muted">Target: 96.2%</span>
+                <span class="muted">WoW: -8.8%</span>
+              </div>
+            </div>
+            
+            <div class="card">
+              <div class="kpi-title">Data Quality Score</div>
+              <div class="kpi-value">86.6%</div>
+              <div class="kpi-meta">
+                <span class="badge watch">WATCH</span>
+                <span class="muted">Target: 90.9%</span>
+                <span class="muted">WoW: -12.6%</span>
+              </div>
+            </div>
+            
+          </div>
+        </section>
+        
+        <section class="section">
+          <h2>Data Platform</h2>
+          <div class="grid">
+            
+            <div class="card">
+              <div class="kpi-title">Incidents (7d)</div>
+              <div class="kpi-value">120</div>
+              <div class="kpi-meta">
+                <span class="badge watch">WATCH</span>
+                <span class="muted">Target: 114</span>
+                <span class="muted">WoW: +15.3%</span>
+              </div>
+            </div>
+            
+            <div class="card">
+              <div class="kpi-title">SLA Compliance</div>
+              <div class="kpi-value">95.4%</div>
+              <div class="kpi-meta">
+                <span class="badge watch">WATCH</span>
+                <span class="muted">Target: 99.5%</span>
+                <span class="muted">WoW: -1.4%</span>
+              </div>
+            </div>
+            
+            <div class="card">
+              <div class="kpi-title">Cost per Ticket</div>
+              <div class="kpi-value">$26,437</div>
+              <div class="kpi-meta">
+                <span class="badge watch">WATCH</span>
+                <span class="muted">Target: $24,656</span>
+                <span class="muted">WoW: +6.0%</span>
+              </div>
+            </div>
+            
+            <div class="card">
+              <div class="kpi-title">Risk Alerts (7d)</div>
+              <div class="kpi-value">23</div>
+              <div class="kpi-meta">
+                <span class="badge watch">WATCH</span>
+                <span class="muted">Target: 14</span>
+                <span class="muted">WoW: -20.2%</span>
+              </div>
+            </div>
+            
+            <div class="card">
+              <div class="kpi-title">Pipeline Success Rate</div>
+              <div class="kpi-value">95.6%</div>
+              <div class="kpi-meta">
+                <span class="badge watch">WATCH</span>
+                <span class="muted">Target: 98.5%</span>
+                <span class="muted">WoW: -10.1%</span>
+              </div>
+            </div>
+            
+            <div class="card">
+              <div class="kpi-title">Forecast Error (MAPE)</div>
+              <div class="kpi-value">95.1%</div>
+              <div class="kpi-meta">
+                <span class="badge watch">WATCH</span>
+                <span class="muted">Target: 99.5%</span>
+                <span class="muted">WoW: -17.0%</span>
+              </div>
+            </div>
+            
+            <div class="card">
+              <div class="kpi-title">Data Quality Score</div>
+              <div class="kpi-value">87.2%</div>
+              <div class="kpi-meta">
+                <span class="badge watch">WATCH</span>
+                <span class="muted">Target: 90.4%</span>
+                <span class="muted">WoW: +11.9%</span>
+              </div>
+            </div>
+            
+          </div>
+        </section>
+        
+        <section class="section">
+          <h2>Finance</h2>
+          <div class="grid">
+            
+            <div class="card">
+              <div class="kpi-title">Incidents (7d)</div>
+              <div class="kpi-value">129</div>
+              <div class="kpi-meta">
+                <span class="badge watch">WATCH</span>
+                <span class="muted">Target: 119</span>
+                <span class="muted">WoW: -9.8%</span>
+              </div>
+            </div>
+            
+            <div class="card">
+              <div class="kpi-title">SLA Compliance</div>
+              <div class="kpi-value">88.0%</div>
+              <div class="kpi-meta">
+                <span class="badge watch">WATCH</span>
+                <span class="muted">Target: 91.6%</span>
+                <span class="muted">WoW: +10.7%</span>
+              </div>
+            </div>
+            
+            <div class="card">
+              <div class="kpi-title">Cost per Ticket</div>
+              <div class="kpi-value">$22,747</div>
+              <div class="kpi-meta">
+                <span class="badge watch">WATCH</span>
+                <span class="muted">Target: $19,819</span>
+                <span class="muted">WoW: -9.3%</span>
+              </div>
+            </div>
+            
+            <div class="card">
+              <div class="kpi-title">Risk Alerts (7d)</div>
+              <div class="kpi-value">64</div>
+              <div class="kpi-meta">
+                <span class="badge watch">WATCH</span>
+                <span class="muted">Target: 44</span>
+                <span class="muted">WoW: +6.0%</span>
+              </div>
+            </div>
+            
+            <div class="card">
+              <div class="kpi-title">Pipeline Success Rate</div>
+              <div class="kpi-value">81.1%</div>
+              <div class="kpi-meta">
+                <span class="badge watch">WATCH</span>
+                <span class="muted">Target: 81.5%</span>
+                <span class="muted">WoW: +12.2%</span>
+              </div>
+            </div>
+            
+            <div class="card">
+              <div class="kpi-title">Forecast Error (MAPE)</div>
+              <div class="kpi-value">92.1%</div>
+              <div class="kpi-meta">
+                <span class="badge watch">WATCH</span>
+                <span class="muted">Target: 95.7%</span>
+                <span class="muted">WoW: +4.7%</span>
+              </div>
+            </div>
+            
+            <div class="card">
+              <div class="kpi-title">Data Quality Score</div>
+              <div class="kpi-value">82.6%</div>
+              <div class="kpi-meta">
+                <span class="badge watch">WATCH</span>
+                <span class="muted">Target: 87.3%</span>
+                <span class="muted">WoW: -7.3%</span>
+              </div>
+            </div>
+            
+          </div>
+        </section>
+        
+        <section class="section">
+          <h2>Operations</h2>
+          <div class="grid">
+            
+            <div class="card">
+              <div class="kpi-title">Incidents (7d)</div>
+              <div class="kpi-value">45</div>
+              <div class="kpi-meta">
+                <span class="badge watch">WATCH</span>
+                <span class="muted">Target: 40</span>
+                <span class="muted">WoW: -21.4%</span>
+              </div>
+            </div>
+            
+            <div class="card">
+              <div class="kpi-title">SLA Compliance</div>
+              <div class="kpi-value">99.0%</div>
+              <div class="kpi-meta">
+                <span class="badge watch">WATCH</span>
+                <span class="muted">Target: 99.5%</span>
+                <span class="muted">WoW: -9.6%</span>
+              </div>
+            </div>
+            
+            <div class="card">
+              <div class="kpi-title">Cost per Ticket</div>
+              <div class="kpi-value">$17,182</div>
+              <div class="kpi-meta">
+                <span class="badge watch">WATCH</span>
+                <span class="muted">Target: $13,273</span>
+                <span class="muted">WoW: -2.7%</span>
+              </div>
+            </div>
+            
+            <div class="card">
+              <div class="kpi-title">Risk Alerts (7d)</div>
+              <div class="kpi-value">110</div>
+              <div class="kpi-meta">
+                <span class="badge watch">WATCH</span>
+                <span class="muted">Target: 103</span>
+                <span class="muted">WoW: +7.0%</span>
+              </div>
+            </div>
+            
+            <div class="card">
+              <div class="kpi-title">Pipeline Success Rate</div>
+              <div class="kpi-value">93.1%</div>
+              <div class="kpi-meta">
+                <span class="badge ok">OK</span>
+                <span class="muted">Target: 92.0%</span>
+                <span class="muted">WoW: -18.9%</span>
+              </div>
+            </div>
+            
+            <div class="card">
+              <div class="kpi-title">Forecast Error (MAPE)</div>
+              <div class="kpi-value">99.0%</div>
+              <div class="kpi-meta">
+                <span class="badge watch">WATCH</span>
+                <span class="muted">Target: 99.5%</span>
+                <span class="muted">WoW: +26.2%</span>
+              </div>
+            </div>
+            
+            <div class="card">
+              <div class="kpi-title">Data Quality Score</div>
+              <div class="kpi-value">97.7%</div>
+              <div class="kpi-meta">
+                <span class="badge watch">WATCH</span>
+                <span class="muted">Target: 98.6%</span>
+                <span class="muted">WoW: +15.4%</span>
+              </div>
+            </div>
+            
+          </div>
+        </section>
+        
+        <section class="section">
+          <h2>Risk</h2>
+          <div class="grid">
+            
+            <div class="card">
+              <div class="kpi-title">Incidents (7d)</div>
+              <div class="kpi-value">47</div>
+              <div class="kpi-meta">
+                <span class="badge ok">OK</span>
+                <span class="muted">Target: 48</span>
+                <span class="muted">WoW: -8.3%</span>
+              </div>
+            </div>
+            
+            <div class="card">
+              <div class="kpi-title">SLA Compliance</div>
+              <div class="kpi-value">82.9%</div>
+              <div class="kpi-meta">
+                <span class="badge watch">WATCH</span>
+                <span class="muted">Target: 88.9%</span>
+                <span class="muted">WoW: +11.2%</span>
+              </div>
+            </div>
+            
+            <div class="card">
+              <div class="kpi-title">Cost per Ticket</div>
+              <div class="kpi-value">$21,640</div>
+              <div class="kpi-meta">
+                <span class="badge watch">WATCH</span>
+                <span class="muted">Target: $18,947</span>
+                <span class="muted">WoW: -0.2%</span>
+              </div>
+            </div>
+            
+            <div class="card">
+              <div class="kpi-title">Risk Alerts (7d)</div>
+              <div class="kpi-value">50</div>
+              <div class="kpi-meta">
+                <span class="badge watch">WATCH</span>
+                <span class="muted">Target: 44</span>
+                <span class="muted">WoW: -6.1%</span>
+              </div>
+            </div>
+            
+            <div class="card">
+              <div class="kpi-title">Pipeline Success Rate</div>
+              <div class="kpi-value">79.7%</div>
+              <div class="kpi-meta">
+                <span class="badge watch">WATCH</span>
+                <span class="muted">Target: 85.6%</span>
+                <span class="muted">WoW: -1.0%</span>
+              </div>
+            </div>
+            
+            <div class="card">
+              <div class="kpi-title">Forecast Error (MAPE)</div>
+              <div class="kpi-value">86.9%</div>
+              <div class="kpi-meta">
+                <span class="badge watch">WATCH</span>
+                <span class="muted">Target: 91.5%</span>
+                <span class="muted">WoW: +6.4%</span>
+              </div>
+            </div>
+            
+            <div class="card">
+              <div class="kpi-title">Data Quality Score</div>
+              <div class="kpi-value">99.0%</div>
+              <div class="kpi-meta">
+                <span class="badge watch">WATCH</span>
+                <span class="muted">Target: 99.5%</span>
+                <span class="muted">WoW: -4.8%</span>
+              </div>
+            </div>
+            
+          </div>
+        </section>
+        
+
+    <div class="footer">
+      Tip: open this file locally in your browser. Next V2: wire real outputs from P01–P13.
+    </div>
+  </div>
+</body>
+</html>
