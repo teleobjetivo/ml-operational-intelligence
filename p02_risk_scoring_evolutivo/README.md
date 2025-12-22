@@ -20,18 +20,17 @@ Este proyecto es una demo **reproducible** (V1) orientada a entrevistas y portaf
 ## 🧠 Arquitectura / Flujo
 
 
-```mermaid
 flowchart LR
   A[Input: entities.csv + history.csv] --> B[Windowing / time features]
   B --> C[Train / update model]
-  C --> D[Score (risk_t)]
+  C --> D[Score: risk_t]
   D --> E[Calibration + segments]
   E --> F{Threshold crossed?}
   F -- yes --> G[Trigger action plan]
   F -- no --> H[Monitoring]
   G --> I[Outputs: scores.csv + actions.csv]
   H --> I
-```
+
 
 ## Estructura del proyecto
 
