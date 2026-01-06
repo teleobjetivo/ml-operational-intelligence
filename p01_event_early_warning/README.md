@@ -4,7 +4,7 @@ _Monitoreo de señales y alertas tempranas para anticipar eventos operacionales.
 
 ## Resumen
 
-Soy Hugo Baghetti. Genera una serie temporal simulada con eventos anómalos, detecta puntos fuera de patrón y produce una alerta simple + figura.
+Este proyecto genera una serie temporal simulada con eventos anómalos, detecta puntos fuera de patrón y produce una alerta simple + figura.
 
 ## Por qué hice este proyecto
 
